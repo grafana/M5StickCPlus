@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ## Git URL
 ```
-git clone https://github.com/willie-engelbrecht/M5StickCPlus
+git clone https://github.com/grafana/M5StickCPlus
 ```
 
 ## Grafana Dashboard
