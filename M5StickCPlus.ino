@@ -48,20 +48,20 @@ PromLokiTransport transport;
 PromClient client(transport);
 
 // Create a write request for 11 time series.
-WriteRequest req(11, 1024);
+WriteRequest req(11, 2048);
 
 // Define all our timeseries
-TimeSeries ts_m5stick_temperature(1, "m5stick_temp", "");
-TimeSeries ts_m5stick_humidity(1, "m5stick_hum", "");
-TimeSeries ts_m5stick_pressure(1, "m5stick_pressure", "");
-TimeSeries ts_m5stick_Iusb(1, "m5stick_Iusb", "");
-TimeSeries ts_m5stick_disCharge(1, "m5stick_disCharge", "");
-TimeSeries ts_m5stick_Iin(1, "m5stick_Iin", "");
-TimeSeries ts_m5stick_BatTemp(1, "m5stick_BatTemp", "");
-TimeSeries ts_m5stick_Vaps(1, "m5stick_Vaps", "");
-TimeSeries ts_m5stick_bat(1, "m5stick_bat", "");
-TimeSeries ts_m5stick_charge(1, "m5stick_charge", "");
-TimeSeries ts_m5stick_vbat(1, "m5stick_vbat", "");
+TimeSeries ts_m5stick_temperature(1, "m5stick_temp", PROM_LABELS);
+TimeSeries ts_m5stick_humidity(1, "m5stick_hum", PROM_LABELS);
+TimeSeries ts_m5stick_pressure(1, "m5stick_pressure", PROM_LABELS);
+TimeSeries ts_m5stick_Iusb(1, "m5stick_Iusb", PROM_LABELS);
+TimeSeries ts_m5stick_disCharge(1, "m5stick_disCharge", PROM_LABELS);
+TimeSeries ts_m5stick_Iin(1, "m5stick_Iin", PROM_LABELS);
+TimeSeries ts_m5stick_BatTemp(1, "m5stick_BatTemp", PROM_LABELS);
+TimeSeries ts_m5stick_Vaps(1, "m5stick_Vaps", PROM_LABELS);
+TimeSeries ts_m5stick_bat(1, "m5stick_bat", PROM_LABELS);
+TimeSeries ts_m5stick_charge(1, "m5stick_charge", PROM_LABELS);
+TimeSeries ts_m5stick_vbat(1, "m5stick_vbat", PROM_LABELS);
 
 
 // ===================================================
