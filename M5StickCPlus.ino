@@ -15,9 +15,13 @@
 
 
 // ===================================================
-// Includes for the M5StickC Plus - no need to change anything here
+// Includes for the M5StickC Plus or M5StickC - no need to change anything here
 // ===================================================
-#include <M5StickCPlus.h>
+#if I_HAVE_M5STICKCPLUS == 1
+  #include <M5StickCPlus.h>
+#elif I_HAVE_M5STICKC == 1
+  #include <M5StickC.h>
+#endif  
 #include "M5_ENV.h"
 
 TFT_eSprite Disbuff = TFT_eSprite(&M5.Lcd);
