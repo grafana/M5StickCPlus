@@ -85,6 +85,7 @@ void setup() {
     
     Wire.begin(32, 33);       // Wire init, adding the I2C bus.  
     qmp6988.init();           // Initiallize the pressure sensor    
+    sht30.init();             // Initialize the temperature sensor
 
     // Configure and start the transport/WiFi layer
     Disbuff.setCursor(10, 30);
