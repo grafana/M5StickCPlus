@@ -3,7 +3,7 @@
 ## Introduction
 Example ESP32 project to showcase how you can pull temperature, humidity and pressure data from the ENV III sensor paired with the M5 StickC Plus.
 
-In this project, you have a configuration file ```config.h``` where you can configure your WiFi credentials, as well as your Grafana Cloud credentials. Data is written to Grafana Cloud using the Influx proxy, where the metrics will then be converted to Prometheus format for querying and visualisation. 
+In this project, you have a configuration file ```config.h``` where you can configure your WiFi credentials, as well as your Grafana Cloud credentials. Data is written to Grafana Cloud using the Prometheus format and uses Grafana for visualisation. 
 
 ## Handy Links for the workshop
 * Download the latest Arduino IDE:
